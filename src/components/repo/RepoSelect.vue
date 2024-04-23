@@ -1,6 +1,6 @@
 <template>
   <div class="relative">
-    <input v-model="keywords" type="text" placeholder="e.g. vuejs/vue" class="input w-full !pr-8 placeholder-neutral-400 dark:placeholder-neutral-500"/>
+    <input v-model="keywords" type="text" value="KashaTech/team-documentation" class="input w-full !pr-8 placeholder-neutral-400 dark:placeholder-neutral-500"/>
     <div class="absolute right-3 top-1/2 -translate-y-1/2 opacity-50">
       <div v-if="status == 'searching'" class="spinner-black-sm"></div>
       <Icon v-else name="Search" class="h-4 w-4 stroke-2 shrink-0"/>
