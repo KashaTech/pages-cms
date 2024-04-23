@@ -51,6 +51,16 @@
   </div>
 </template>
 
+<script>
+export default {
+  data () {
+    return {
+      keywords: 'KashaTech/team-documentation'
+    }
+  }
+}
+</script>
+
 <script setup>
 import { ref, computed, watch, inject } from 'vue';
 import { debounce } from 'lodash';
