@@ -70,7 +70,7 @@ import github from '@/services/github';
 
 const repoStore = inject('repoStore', { owner: null, repo: null });
 
-const keywords = ref('KashaTech/team-documentation');
+const keywords = ref('');
 const results = ref([]);
 const status = ref('');
 const query = computed(() => 'KashaTech/team-documentation');
@@ -110,4 +110,6 @@ const debouncedSearchRepos = debounce(
 watch(keywords, () => {
   debouncedSearchRepos();
 });
+
+debouncedSearchRepos();
 </script>
