@@ -70,10 +70,10 @@ import github from '@/services/github';
 
 const repoStore = inject('repoStore', { owner: null, repo: null });
 
-const keywords = ref('');
+const keywords = ref('KashaTech/team-documentation');
 const results = ref([]);
 const status = ref('');
-const query = computed(() => keywords.value.trim());
+const query = computed(() => 'KashaTech/team-documentation');
 
 const props = defineProps({
   componentClass: { type: String, default: '' }
